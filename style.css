@@ -48,6 +48,27 @@ nav button{
     font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     display: inline-flex;
     font-display: optional;
+    font-style: normal;
+    font-weight: 400;
+    size: 16px;
+    line-height: 20px;
 
     
+}
+.hero{
+    height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   flex-direction: column;
+    position: relative;
+}
+.hero :first-child{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    size: 64px;
+    line-height: 80px;
+   
 }
