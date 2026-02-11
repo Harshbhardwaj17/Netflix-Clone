@@ -161,7 +161,7 @@ nav button {
     border-radius: 5px;
     background: rgb(219, 0, 11);
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: bolder;
     padding: 15px;
     width: 230px;
 
@@ -174,14 +174,95 @@ nav button {
     padding: 3px 24px;
     border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.23);
-    font-weight: bold;
+    font-weight: 500;
     background: transparent;
     width: 360px;
     padding: 15px;
     position: relative;
     z-index: 10;
+    color: white;
 }
 
 .btn-red {
     font-weight: bold;
+}
+
+.trending {
+    color: white;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 70px;
+    display: block;
+    font-display: optional;
+    font-family: font-family Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 33px;
+    padding-top: 0px;
+    margin-left: 300px;
+}
+
+.border {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.poster {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: visible;
+    /* overflow-x: scroll; */
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    margin-left: 300px;
+}
+
+.li-style {
+
+    width: 8.75rem;
+    height: 12.25rem;
+    text-align: center;
+    word-spacing: normal;
+    letter-spacing: normal;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0.5rem;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+   padding: 10px;
+   
+}
+.li-style-2{
+    width: 8.75rem;
+    height: 12.25rem;
+    text-align: center;
+    word-spacing: normal;
+    letter-spacing: normal;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0.5rem;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
 }
