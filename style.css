@@ -11,8 +11,37 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1000px 100vw);
+   
 
 
+}
+.align{
+    padding-left: 80px;
+    padding-top: 0 5 rem;
+    box-sizing: border-box;
+    display: inherit;
+    padding-right: 150px;
+    box-sizing: border-box;
+}
+.btn-red {
+    font-weight: bold;
+    background: #e50914;
+  color: #fff;
+  border-radius: 4px;
+   justify-content: center;
+    height: 32px;
+    padding: 0 16px;
+    border: none;
+    line-height: 1;
+    cursor: pointer;
+
+
+}
+.gap{
+    display:inline-flex;
+    align-items: center;
+    gap: 12px;
+   
 }
 
 body {
@@ -26,21 +55,48 @@ body {
     opacity: 0.57;
     top: 0;
     position: absolute;
+    
+   
+   
 
 }
+.lang-pick{
+        background: rgba(22, 22, 22, 0.7);
+    align-items: center;
+    position: relative;
+    display: inline-flex;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 4px;
+    height: 32px;
+    padding: 0 28px 0 30px;
+}
+.lang-pick select{
+    padding-right: 8px;
+    color: #fff;
+    background: transparent;
+    font-size: 14px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    
 
+}
+.lang-pick select option{
+    background-color: #fff2f2;
+    color: #000000;
+}
 nav {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    max-width: 70vw;
-    padding: 5px;
+    max-width: 1200px;
 }
 
 nav img {
-    width: 102px;
+    width: 148px;
+    height: auto;
     padding: 25px;
     color: red;
     position: relative;
@@ -139,19 +195,6 @@ nav button {
     font-size: 16px;
 }
 
-/* /* .btn {
-    background-color: red;
-    color: white;
-    padding: 11px;
-    margin: 8px;
-    justify-content: center;
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-    display: inline-flex;
-    font-size: 30px;
-    border: 1px solid red;
-    border-radius: 2px;
-    flex: 0 0 auto;
-} */
 .btn {
     font-family: font-family Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     align-items: center;
@@ -183,9 +226,7 @@ nav button {
     color: white;
 }
 
-.btn-red {
-    font-weight: bold;
-}
+
 
 .trending {
     color: white;
