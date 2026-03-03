@@ -15,6 +15,7 @@
     background-size: cover;
     background-color: #000000;
     max-width: 100%;
+    
 }
 
 .align {
@@ -28,32 +29,30 @@
 
 .btn-red {
     
-    background: #e50914;
+        background: #e50914;
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-    width: 92px;
+    width: 76px;
     border: none;
     cursor: pointer;
     font-style: normal;
     margin: -17px;
-    padding: 4px;
+    padding: 5px;
     font-weight: 500;
-    line-height: 22px;
-    color: rgb(255,255,255);
+    line-height: 24px;
+    color: rgb(255, 255, 255);
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-    padding-right: 21px;
-
+    padding-right: 11px
 
 
 }
 
-/* .gap {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px; */
+ .gap {
+   margin-top: -26px;
+   margin-right: -19px;
 
-/* } */
+ } 
 
 body {
     background-color: black;
@@ -71,7 +70,7 @@ body {
 
 }
 
-.lang-pick {
+/* .lang-pick {
     background: rgba(22, 22, 22, 0.7);
     align-items: center;
     display: inline-flex;
@@ -88,7 +87,7 @@ body {
     padding-top: 0 5 rem;
 
 
-}
+} */
 
 .lang-pick select {
     padding-right: 8px;
@@ -116,15 +115,17 @@ nav {
     align-items: center;
     margin: auto;
     max-width: 1200px;
+    
 }
 
 nav img {
-    width: 148px;
+    width: 206px;
     height: auto;
     padding: 25px;
     color: red;
     position: relative;
     z-index: 10;
+    margin-left: 9px;
 }
 
 /* nav button:nth-child(2) {
@@ -208,32 +209,50 @@ nav button {
     gap: 10px;
     margin: 4px;
     padding: 10px;
-    padding-right: 54px;
+    padding-right: 34px;
 }
 
 .ready {
-    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    /* font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     font-weight: 400;
     color: white;
     font-size: 16px;
     line-height: 24px;
     font-size: 16px;
-    padding-right: 32px;
-    padding-top: 17px;
+   margin-left: -36px; */
+
+       color: rgb(255, 255, 255);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    /* line-height: 1.5; */
+    text-align: center;
+    padding-left: 1px;
+}
+
+#unique{
+    margin-left: -127px;
 }
 
 .btn {
     font-family: font-family Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     align-items: center;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 3px 24px;
+    /* font-size: 20px; */
+    /* padding: 3px 24px; */
     border-radius: 5px;
-    background: rgb(219, 0, 11);
     color: rgb(255, 255, 255);
     font-weight: bolder;
     padding: 13px;
     width: 206px;
+
+        background: #e50914;
+    color: #fff;
+    padding: 0 24px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+
 
 }
 
@@ -244,7 +263,7 @@ nav button {
     padding: 3px 24px;
     font-weight: 500;
     background: transparent;
-    width: 360px;
+    width: 440px;
     padding: 15px;
     position: relative;
     z-index: 10;
@@ -307,8 +326,8 @@ nav button {
 .item {
     position: relative;
     display: flex;
-    gap: 16px;
-    margin: 0;
+    gap: 26px;
+    margin: 40rem;
     padding: 0;
     list-style: none;
     overflow-y: visible;
@@ -317,14 +336,14 @@ nav button {
     margin-block-end: 1em;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
-    margin-left: 300px;
+    margin-left: 355px;
+        transition: transform 0.2s ease-in-out;
 
 }
 
 .li-style {
-
-    width: 8.75rem;
-    height: 12.25rem;
+    width: 13.75rem;
+    height: 20.25rem;
     text-align: center;
     word-spacing: normal;
     letter-spacing: normal;
@@ -562,11 +581,15 @@ nav button {
     background-color: #2d2d2d;
     width: 62vw;
     margin: 10px auto;
+        transition-duration: 250ms;
+    transition-property: background-color, margin-bottom, border-radius;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
 
 }
 
 .question-box:hover{
     background-color: #4d4d4d;
+       
 }
 
 .ready{
@@ -626,6 +649,8 @@ nav button {
      right: 1rem; 
     top: 1rem;
     z-index: 1;
+        fill: white;
+    color: rgba(255, 255, 255, 0.8)
 
 
 }
@@ -634,7 +659,7 @@ nav button {
   background: #e50914;
   color: #fff;
   border-radius: 5px;
-  padding: 0 24px;
+  padding: 14px 31px;
   font-size: 22px;
   font-weight: bold;
   cursor: pointer;
@@ -653,7 +678,7 @@ nav button {
 }
 
 .footer{
-   margin-top: 100px;
+   
 
 }
 
@@ -661,9 +686,90 @@ nav button {
     color: rgba(255, 255, 255, 0.7);
         margin-top: 45px;
     margin-left: 115px;
+    margin-bottom: 20px;
     font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 .call a{
     color: rgba(255, 255, 255, 0.7);
 }
 
+.foot-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10ox;
+        margin-top: 32px;
+    margin-left: 113px;
+    padding-right: 216px;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    color:  rgba(255, 255, 255, 0.7);
+    
+}
+
+.foot a {
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+}
+.last{
+     
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: unset;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-left: 111px;
+}
+
+.language-box {
+    display:inline-flex;
+    align-items: center;
+    background-color: black;
+    border:  1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    padding: 4px;
+    padding-left: 15px;
+    margin: 25px;
+    box-sizing: border-box;
+    padding-top: 0 5 rem;
+    display: inline-flex;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    line-height: 24px;
+    /* font-size: 16px; */
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-left: 108px;
+    margin-top: 42px;
+    padding-right: 22px;
+}
+
+.icon {
+    color: white;
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+
+select {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding-right: 12px;
+}
+
+
+select option {
+    background-color: white;
+    color: black;
+}
