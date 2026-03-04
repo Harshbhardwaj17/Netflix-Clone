@@ -6,7 +6,7 @@
 
 }
 
-.main {
+.page-start {
     background-image: url(assests/images/main.jpeg);
     height: 90vh;
     position: relative;
@@ -15,8 +15,24 @@
     background-size: cover;
     background-color: #000000;
     max-width: 100%;
+     /* clip-path: path('M 0 0 L 1902 0 L 1902 860 Q 850 750 0 860 Z'); */
+     filter: drop-shadow(0 20px 30px rgba(15, 39, 227, 0.6));
+
+      
+
 
 }
+.page-start::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 0.5 = opacity */
+}
+
+
 
 .align {
     padding-left: 80px;
@@ -33,17 +49,21 @@
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-    width: 76px;
+    width: 80px;
     border: none;
     cursor: pointer;
     font-style: normal;
     margin: -17px;
-    padding: 5px;
+    padding: 2px;
     font-weight: 500;
     line-height: 24px;
     color: rgb(255, 255, 255);
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-    padding-right: 11px
+       padding-right: 6px;
+    padding-top: 2px;
+    padding-left: 4px;
+    font-size: 15px;
+    height: 34px;
 }
 
 .gap {
@@ -188,7 +208,7 @@ nav button {
     padding-left: 13px;
     margin: -20px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    
 
 }
 
@@ -224,7 +244,7 @@ nav button {
     font-weight: 400;
     /* line-height: 1.5; */
     text-align: center;
-    padding-left: 149px;
+    padding-left: 141px;
 }
 
 #unique {
@@ -324,19 +344,24 @@ nav button {
 .item {
     position: relative;
     display: flex;
-    gap: 26px;
+    gap: 32px;
     margin: 23rem;
     padding: 0;
     list-style: none;
-    overflow-y: visible;
-    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
     margin-left: 355px;
-    transition: transform 0.2s ease-in-out;
+    scroll-behavior: smooth;
+ 
 
+}
+
+.item::-webkit-scrollbar {
+    display: none;
 }
 
 .li-style {
@@ -356,6 +381,7 @@ nav button {
     position: relative;
     padding: 10px;
     flex: 0 0 auto;
+    flex-shrink: 0;
 
 }
 
@@ -414,11 +440,16 @@ nav button {
     position: absolute;
     bottom: 10px;
     left: -12px;
-    font-size: 100px;
+    font-size: 120px;
     color: black;
-    -webkit-text-stroke: 2px white;
-    font-style: bold;
-    font-weight: bold;
+    -webkit-text-stroke: 2px rgb(217, 217, 217);
+  
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 120px;
+    left: -1.375rem;
+    
+    
 }
 
 .join {
@@ -510,6 +541,11 @@ nav button {
     left: 161px;
     top: 24px;
 }
+.scgg{
+     position: relative;
+    left: 161px;
+    top: 24px;
+}
 
 .question {
     color: white;
@@ -523,6 +559,8 @@ nav button {
     padding-top: 0px;
     margin-left: 11px;
     margin-top: 4rem;
+    height: auto;
+    overflow: hidden;
 }
 
 .ques {
@@ -658,13 +696,14 @@ nav button {
     color: rgba(255, 255, 255, 0.8)
 }
 
+
 .cta button {
     background: #e50914;
     color: #fff;
     border-radius: 5px;
-    padding: 14px 31px;
+    padding: 1px 31px;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 500;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -721,18 +760,18 @@ nav button {
 
     margin: 0;
     padding: 0;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.5);
     font-family: unset;
     font-size: 0.875rem;
     font-weight: 400;
-    padding-top: 40px;
+    padding-top: 26px;
     padding-left: 111px;
 }
 
 .language-box {
     display: inline-flex;
     align-items: center;
-    background-color: black;
+    background: rgba(22, 22, 22, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 5px;
     padding: 4px;
@@ -750,6 +789,34 @@ nav button {
     margin-left: 108px;
     margin-top: 42px;
     padding-right: 22px;
+
+           /* outer box transparent */
+    
+    padding: 6px 10px;
+    border-radius: 4px;
+   
+  
+   
+}
+
+.language-box select {
+   
+         padding: 1px;
+    padding-top: 4px;
+    margin-top: -1px;
+    padding-left: 7px;
+    padding-right: 6px;
+    background: rgba(22, 22, 22, 0.7);   /* remove default white background */
+     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+   
+
+  
+}
+nav {
+    position: relative;
+    z-index: 10;
 }
 
 .icon {
@@ -757,10 +824,17 @@ nav button {
     font-weight: bold;
     margin-right: 5px;
     font-size: 14px;
+        position: absolute;
+    pointer-events: none;
+    width: 1rem;
+    height: 1rem;
+    left: 0.75rem;
+    right: auto;
+    z-index: 1;
 }
 
 
-select {
+ select {
     background-color: black;
     color: white;
     border: none;
@@ -776,11 +850,11 @@ select option {
     color: black;
 }
 
-.curve-section {
-    /* position: relative;
+/* .curve-section {
+    position: relative;
     height: 110px;
     background: #000;
-    overflow: hidden; */
+    overflow: hidden;
 
     box-sizing: border-box;
     overflow-x: hidden;
@@ -790,14 +864,14 @@ select option {
 }
 
 .curve-line {
-    /* position: absolute;
+    position: absolute;
     top: -82px;
     left: -5%;
     width: 110%;
     height: 190px;
     border-top: 3px solid #ff1f70;
     border-radius: 50%;
-    z-index: 3; */
+    z-index: 3;
 
     width: 120%;
     left: -10%;
@@ -808,7 +882,7 @@ select option {
     top: 5px;
     right: 64px;
     bottom: 90px;
-    left: 26px;
+    left: 0px;
     z-index: 12;
     margin-top: -0.25rem;
     border-radius: inherit;
@@ -841,4 +915,4 @@ select option {
             rgba(0, 0, 0, 0) 100%);
     transform: translateY(8px);
     z-index: 2;
-} 
+}  */
