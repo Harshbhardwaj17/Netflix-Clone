@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 
 }
 
@@ -15,7 +15,7 @@
     background-size: cover;
     background-color: #000000;
     max-width: 100%;
-    
+
 }
 
 .align {
@@ -28,8 +28,8 @@
 }
 
 .btn-red {
-    
-        background: #e50914;
+
+    background: #e50914;
     border-radius: 4px;
     justify-content: center;
     align-items: center;
@@ -44,20 +44,19 @@
     color: rgb(255, 255, 255);
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     padding-right: 11px
+}
 
+.gap {
+    margin-top: -26px;
+    margin-right: -19px;
 
 }
 
- .gap {
-   margin-top: -26px;
-   margin-right: -19px;
-
- } 
-
 body {
-    background-color: black;
-    /* height: 100%; */
+    background-color: #000000;
+    /* height: 100%;  */
     margin: 0;
+
 }
 
 .main .box {
@@ -115,7 +114,7 @@ nav {
     align-items: center;
     margin: auto;
     max-width: 1200px;
-    
+
 }
 
 nav img {
@@ -188,6 +187,8 @@ nav button {
     padding: 2px;
     padding-left: 13px;
     margin: -20px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -195,8 +196,10 @@ nav button {
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 64px;
+    font-size: 68px;
     line-height: 80px;
+    margin-right: 0px;
+    margin-left: 85px;
 }
 
 .hero :nth-child(3) {
@@ -209,28 +212,22 @@ nav button {
     gap: 10px;
     margin: 4px;
     padding: 10px;
-    padding-right: 34px;
+    padding-right: 0px;
 }
 
 .ready {
-    /* font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-    font-weight: 400;
-    color: white;
-    font-size: 16px;
-    line-height: 24px;
-    font-size: 16px;
-   margin-left: -36px; */
 
-       color: rgb(255, 255, 255);
+
+    color: rgb(255, 255, 255);
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-    font-size: 1rem;
+    font-size: 15px;
     font-weight: 400;
     /* line-height: 1.5; */
     text-align: center;
-    padding-left: 1px;
+    padding-left: 149px;
 }
 
-#unique{
+#unique {
     margin-left: -127px;
 }
 
@@ -245,7 +242,7 @@ nav button {
     padding: 13px;
     width: 206px;
 
-        background: #e50914;
+    background: #e50914;
     color: #fff;
     padding: 0 24px;
     font-size: 22px;
@@ -274,7 +271,7 @@ nav button {
     border-color: rgba(128, 128, 128, 0.7);
 }
 
-.lab{
+.lab {
     color: rgba(255, 255, 255, 0.7);
     font-family: unset;
     font-size: 1rem;
@@ -305,7 +302,7 @@ nav button {
     display: flex;
     flex-direction: row;
     gap: 20px;
-        /* overflow-x: auto
+    /* overflow-x: auto
     scroll-snap-type-x: mandatory;
     scrollbar-width: none; */
 
@@ -319,7 +316,8 @@ nav button {
     scroll-snap-type-x: mandatory;
     scrollbar-width: none;
 }
-.poster::-webkit-scrollbar{
+
+.poster::-webkit-scrollbar {
     display: none;
 }
 
@@ -327,17 +325,17 @@ nav button {
     position: relative;
     display: flex;
     gap: 26px;
-    margin: 40rem;
+    margin: 23rem;
     padding: 0;
     list-style: none;
     overflow-y: visible;
-    overflow-x: scroll; 
+    overflow-x: scroll;
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
     margin-left: 355px;
-        transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 
 }
 
@@ -412,7 +410,7 @@ nav button {
     cursor: pointer;
 }
 
-.number{
+.number {
     position: absolute;
     bottom: 10px;
     left: -12px;
@@ -423,8 +421,8 @@ nav button {
     font-weight: bold;
 }
 
-.join{
-   
+.join {
+
     color: white;
     padding: 0;
     font-size: 2rem;
@@ -439,17 +437,18 @@ nav button {
     margin-top: 4rem;
 }
 
-.another-sec{
+.another-sec {
     margin-top: 30px;
     margin-left: 12vw;
     margin-left: 12vw;
-    height:auto;
+    height: auto;
     width: 75vw;
     overflow: hidden;
-   
+
     /* border: 1px solid red; */
 }
-.section{
+
+.section {
     display: flex;
     gap: 15px;
     height: 350px;
@@ -457,60 +456,62 @@ nav button {
     margin-left: 124px;
     padding-top: 16px;
 }
-   
 
 
-.card2{
+
+.card2 {
     color: white;
-     height: 325px;
+    height: 325px;
     width: 40vw;
     flex: 10px 10px 10px 10px;
-    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);   
-    border-radius: 1rem;  
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 1rem;
     padding: 15px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 
-        --wct--layout-container--columnSpacing: 0px;
+    --wct--layout-container--columnSpacing: 0px;
     --wct--layout-container--flexDirection: column;
-     --wct--layout-container--padding-xs: 1.5rem 1rem 5rem 1rem; 
+    --wct--layout-container--padding-xs: 1.5rem 1rem 5rem 1rem;
     --wct--layout-container--padding-s: 1.5rem 1rem 6rem 1rem;
-    --wct--layout-container--padding-m: 1.5rem 1.5rem 6rem 1.5rem; 
+    --wct--layout-container--padding-m: 1.5rem 1.5rem 6rem 1.5rem;
     --wct--layout-container--padding-l: 1.5rem 1rem 8rem 1rem;
     --wct--layout-container--padding-xl: 1.5rem 1rem 8rem 1rem;
     --wct--layout-container--padding-xxl: 2rem 1.5rem 8rem 1.5rem;
     --wct--layout-container--padding-xxxl: 2rem 1.5rem 8rem 1.5rem;
     --wct--layout-container--rowSpacing-xs: 0.5rem;
-     --wct--layout-container--rowSpacing-s: 0.5rem; 
+    --wct--layout-container--rowSpacing-s: 0.5rem;
     --wct--layout-container--rowSpacing-m: 0.75rem;
     --wct--layout-container--rowSpacing-l: 1rem;
     --wct--layout-container--rowSpacing-xl: 1rem;
     --wct--layout-container--rowSpacing-xxl: 1.5rem;
     --wct--layout-container--rowSpacing-xxxl: 1.5rem;
     --wct--layout-container--width: 100%;
-    
-   
+
+
 }
 
-.card2 h3{
+.card2 h3 {
     font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
     line-height: normal;
     font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
-.card2 p{
+
+.card2 p {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.smallimg{
+.smallimg {
     position: relative;
     left: 161px;
     top: 24px;
 }
-.question{
+
+.question {
     color: white;
     padding: 0;
     font-weight: 700;
@@ -524,7 +525,7 @@ nav button {
     margin-top: 4rem;
 }
 
-.ques{
+.ques {
     list-style: none;
     padding: 1.5rem;
     margin: 0;
@@ -533,13 +534,13 @@ nav button {
     padding-left: 337px;
 }
 
-.what-que{
+.what-que {
     margin: 0;
     display: flex;
     font-size: inherit;
     margin-bottom: 0rem;
     position: relative;
-    background-color: rgb(45,45,45);
+    background-color: rgb(45, 45, 45);
     color: white;
     transition-duration: 250ms;
     transition-property: background-color, margin-bottom, border-radius;
@@ -553,12 +554,12 @@ nav button {
     width: 60rem;
 
 } */
-.svg-icon{
+.svg-icon {
     margin-left: 46rem;
     margin-top: 14px;
 }
 
-.sec-three{
+.sec-three {
     margin-top: 30px;
     margin-left: 12vw;
     margin-right: 12vw;
@@ -566,46 +567,50 @@ nav button {
     width: 75vw;
 
 }
-.faq{
+
+.faq {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 22px;
     font-weight: 400;
     font-size: 1.5rem;
-    font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     color: #fff;
-    
+
 }
-.question-box{
+
+.question-box {
     background-color: #2d2d2d;
     width: 62vw;
     margin: 10px auto;
-        transition-duration: 250ms;
+    transition-duration: 250ms;
     transition-property: background-color, margin-bottom, border-radius;
     transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
 
 }
 
-.question-box:hover{
+.question-box:hover {
     background-color: #4d4d4d;
-       
+
 }
 
-.ready{
+.ready {
     color: rgb(255, 255, 255);
-    font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
     padding-left: 102px;
 }
-.repeat{
+
+.repeat {
     max-width: 48.9375rem;
     margin-top: 45px;
     margin-left: 318px
- }
+}
+
 /* .sign{
     color: rgba(255, 255, 255, 0.7);
     font-family: unset;
@@ -618,105 +623,102 @@ nav button {
 }  */
 
 .cta {
-  display: flex;
-  max-width: 700px;
-  gap: 10px;
-  padding-top: 
-  16px;
+    display: flex;
+    max-width: 700px;
+    gap: 10px;
+    padding-top:
+        16px;
 }
 
 .cta input {
-  flex: 1;
-  padding: 16px;
-  font-size: 16px;
-  color: #fff;
-  border: 1px solid;
-  border-right: none;
-  outline: none;
-  background: rgba(22, 22, 22, 0.7);
- border-radius: 0.25rem;
+    flex: 1;
+    padding: 16px;
+    font-size: 16px;
+    color: #fff;
+    border: 1px solid;
+    border-right: none;
+    outline: none;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 0.25rem;
     border-width: 0.0625rem;
     border-color: rgba(128, 128, 128, 0.7);
 }
 
 .cta input::placeholder {
-     color: rgba(255, 255, 255, 0.7);
-    font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     left: 1rem;
-     line-height: 1.5; 
-     right: 1rem; 
+    line-height: 1.5;
+    right: 1rem;
     top: 1rem;
     z-index: 1;
-        fill: white;
+    fill: white;
     color: rgba(255, 255, 255, 0.8)
-
-
 }
 
 .cta button {
-  background: #e50914;
-  color: #fff;
-  border-radius: 5px;
-  padding: 14px 31px;
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+    background: #e50914;
+    color: #fff;
+    border-radius: 5px;
+    padding: 14px 31px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .cta button span {
-  margin-left: 8px;
-  font-size: 20px;
-  border-radius: 11px;
+    margin-left: 8px;
+    font-size: 20px;
+    border-radius: 11px;
 }
 
 .cta button:hover {
-  background: #f6121d;
+    background: #f6121d;
 }
 
-.footer{
-   
+.footer {}
 
-}
-
-.call{
+.call {
     color: rgba(255, 255, 255, 0.7);
-        margin-top: 45px;
+    margin-top: 45px;
     margin-left: 115px;
     margin-bottom: 20px;
-    font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
-.call a{
+
+.call a {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.foot-grid{
+.foot-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10ox;
-        margin-top: 32px;
+    margin-top: 32px;
     margin-left: 113px;
     padding-right: 216px;
 }
 
-.foot{
+.foot {
     display: flex;
     flex-direction: column;
     gap: 5px;
     width: 100%;
-    color:  rgba(255, 255, 255, 0.7);
-    
+    color: rgba(255, 255, 255, 0.7);
+
 }
 
 .foot a {
     color: rgba(255, 255, 255, 0.7);
     padding-top: 10px;
 }
-.last{
-     
+
+.last {
+
     margin: 0;
     padding: 0;
     color: rgba(255, 255, 255, 0.7);
@@ -728,10 +730,10 @@ nav button {
 }
 
 .language-box {
-    display:inline-flex;
+    display: inline-flex;
     align-items: center;
     background-color: black;
-    border:  1px solid rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 5px;
     padding: 4px;
     padding-left: 15px;
@@ -773,3 +775,70 @@ select option {
     background-color: white;
     color: black;
 }
+
+.curve-section {
+    /* position: relative;
+    height: 110px;
+    background: #000;
+    overflow: hidden; */
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    height: 6.25rem;
+    z-index: 1;
+}
+
+.curve-line {
+    /* position: absolute;
+    top: -82px;
+    left: -5%;
+    width: 110%;
+    height: 190px;
+    border-top: 3px solid #ff1f70;
+    border-radius: 50%;
+    z-index: 3; */
+
+    width: 120%;
+    left: -10%;
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    position: absolute;
+    top: 5px;
+    right: 64px;
+    bottom: 90px;
+    left: 26px;
+    z-index: 12;
+    margin-top: -0.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+ .curve-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.75) 45%,
+            #000 100%);
+    z-index: 1;
+}
+
+.curve-line::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    height: 26px;
+    border-radius: 50%;
+    filter: blur(10px);
+    background: radial-gradient(ellipse at center,
+            rgba(30, 70, 255, 0.95) 0%,
+            rgba(25, 50, 200, 0.55) 45%,
+            rgba(0, 0, 0, 0) 100%);
+    transform: translateY(8px);
+    z-index: 2;
+} 
