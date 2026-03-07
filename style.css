@@ -16,7 +16,7 @@
     background-color: #000000;
     max-width: 100%;
      /* clip-path: path('M 0 0 L 1902 0 L 1902 860 Q 850 750 0 860 Z'); */
-     filter: drop-shadow(0 20px 30px rgba(15, 39, 227, 0.6));
+     /* filter: drop-shadow(0 20px 30px rgba(15, 39, 227, 0.6)); */
 
       
 
@@ -314,6 +314,7 @@ nav button {
     font-size: 33px;
     padding-top: 0px;
     margin-left: 300px;
+    padding-top: 98px;
 }
 
 .border {
@@ -850,69 +851,39 @@ select option {
     color: black;
 }
 
-/* .curve-section {
+
+
+/* .curve-divider{
+position:relative;
+width:100%;
+height:140px;
+background:black;
+overflow:hidden;
+}
+
+.curve-svg{
+position:absolute;
+bottom:0;
+width:100%;
+height:100%;
+} */
+
+.curve-in{
+    height: 10vh;
+    width: 100vw;
     position: relative;
-    height: 110px;
-    background: #000;
-    overflow: hidden;
-
-    box-sizing: border-box;
-    overflow-x: hidden;
-    position: relative;
-    height: 6.25rem;
-    z-index: 1;
+    background: linear-gradient(to right,black, rgb(255,0,204), red, rgb(255,0,204), black);
+    bottom: 70px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
-.curve-line {
-    position: absolute;
-    top: -82px;
-    left: -5%;
-    width: 110%;
-    height: 190px;
-    border-top: 3px solid #ff1f70;
-    border-radius: 50%;
-    z-index: 3;
-
-    width: 120%;
-    left: -10%;
-    content: '';
-    position: absolute;
-    border-radius: inherit;
-    position: absolute;
-    top: 5px;
-    right: 64px;
-    bottom: 90px;
-    left: 0px;
-    z-index: 12;
-    margin-top: -0.25rem;
-    border-radius: inherit;
-    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
-}
-
- .curve-section::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 0.75) 45%,
-            #000 100%);
-    z-index: 1;
-}
-
-.curve-line::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: 0;
+.curve-out{
+    height: 90%;
     width: 100%;
-    height: 26px;
-    border-radius: 50%;
-    filter: blur(10px);
-    background: radial-gradient(ellipse at center,
-            rgba(30, 70, 255, 0.95) 0%,
-            rgba(25, 50, 200, 0.55) 45%,
-            rgba(0, 0, 0, 0) 100%);
-    transform: translateY(8px);
-    z-index: 2;
-}  */
+    background: radial-gradient(ellipse at 50% 0,blue, black 50%);
+    position: absolute;
+    top: 10%;
+       border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+}
