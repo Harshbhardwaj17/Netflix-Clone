@@ -873,7 +873,7 @@ height:100%;
     width: 100vw;
     position: relative;
     background: linear-gradient(to right,black, rgb(255,0,204), red, rgb(255,0,204), black);
-    bottom: 70px;
+    bottom: 84px;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 }
